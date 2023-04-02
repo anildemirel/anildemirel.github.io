@@ -1,5 +1,5 @@
 ---
-title: Self Aware Programs
+title: Self Aware
 ---
 
 # A Classical Exercise
