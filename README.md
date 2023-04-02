@@ -1,1 +1,0 @@
-# anildemirel.github.io
