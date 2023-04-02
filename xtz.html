@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Self Aware Programs</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Self Aware Programs</h1>
+</header>
+<h1 id="a-classical-exercise">A Classical Exercise</h1>
+<p>A computer program which produces its own source code is called a
+quine, named after the logician Willard Van Orman Quine.</p>
+<p><strong>Exercise:</strong> Write a quine in your favorite programming
+language.</p>
+<p>If you haven’t solved this exercise before, I urge you to stop right
+now and give it a try.</p>
+<p>To give you an idea of why this is an interesting problem, let us try
+to solve it in a naive way. Instead of using an actual programming
+language I will use pseudocode to keep things simple.</p>
+<p>The obvious candidate of a quine is</p>
+<pre><code>Print your own source code</code></pre>
+<p>This looks like cheating but actually there are languages which allow
+this. For instance</p>
+<pre><code>10 List</code></pre>
+<p>is a valid GWBasic program which, when run, prints
+<code>10 List</code> on the screen. Actually, in GWBasic, <em>any</em>
+code which starts with <code>10 List</code> is a quine.</p>
+<p>So, to make things less trivial and more generic, let us restrict
+ourselves to text manipulations. In this case, the first candidate
+is</p>
+<pre><code>Print &quot;Print&quot;</code></pre>
+<p>The output of this code is simply <code>Print</code>. So it doesn’t
+work. Seeing this, you may try</p>
+<pre><code>Print &quot;Print &quot;Print&quot;&quot;</code></pre>
+<p>This time the output is <code>Print "Print"</code>. Failed again.
+Actually, any code of the form
+<code>Print "&lt;any kind of fixed text&gt;"</code> will fail as the
+source code is strictly longer than the text it prints. Now here is an
+idea to circumvent this: We can use the the given text, or its parts,
+more than once! So let us try a program like this:</p>
+<pre><code>Let A be the following text:
+&quot;&lt;there is going to be a text here&gt;&quot;
+&lt;there are going to be commands here explaining what to do with A&gt;</code></pre>
+<p>As we will construct the source code using the parts of the text A,
+the first line of the code should be a part of A. So our program should
+look like this:</p>
+<pre><code>Let A be the following text:
+&quot;Let A be the following text:
+&lt;there are going to be more lines here&gt;&quot;
+&lt;there are going to be commands here explaining what to do with A&gt;</code></pre>
+<p>Of course, we will print the first line. Thus we should have a
+program like this:</p>
+<pre><code>Let A be the following text:
+&quot;Let A be the following text:
+&lt;there are going to be more lines here&gt;&quot;
+Print the first line of A
+&lt;there are going to be more commands here&gt;</code></pre>
+<p>Obviously the command <code>Print the first line of A</code> should
+appear somewhere in A. So let’s add it to A to obtain</p>
+<pre><code>Let A be the following text:
+&quot;Let A be the following text:
+Print the first line of A
+&lt;there are going to be more lines here&gt;&quot;
+Print the first line of A
+&lt;there are going to be more commands here&gt;</code></pre>
+<p>Now the second printing command should print what comes after the
+first line. But this is simply the text A in quotation. Therefore we
+should have</p>
+<pre><code>Let A be the following text:
+&quot;Let A be the following text:
+Print the first line of A
+&lt;there are going to be more lines here&gt;&quot;
+Print the first line of A
+Print A in quotation
+&lt;there are going to be more commands here&gt;</code></pre>
+<p>Again these commands should appear in A. So we have</p>
+<pre><code>Let A be the following text:
+&quot;Let A be the following text:
+Print the first line of A
+Print A in quotation
+&lt;there are going to be more lines here&gt;&quot;
+Print the first line of A
+Print A in quotation
+&lt;there are going to be more commands here&gt;</code></pre>
+<p>Note that, up until now, all the steps we took were pretty much
+forced. The final step will be a little different and require a tid bit
+of creativity. Here is our finished quine:</p>
+<pre><code>Let A be the following text:
+&quot;Let A be the following text:
+Print the first line of A
+Print A in quotation
+Print A except for its first line&quot;
+Print the first line of A
+Print A in quotation
+Print A except for its first line</code></pre>
+<p>As an exercise, you may translate this quine into a real programming
+language. Even though the quine above has the essential idea, you may
+still need to deal with a few language specific details such as escaping
+quotation marks. Here is one for you in Haskell meant to be evaluated in
+repl.</p>
+<pre><code>let x = [&quot;let x = &quot;, &quot; in putStr (x !! 0) &gt;&gt; putStr (show x) &gt;&gt; putStr (x !! 1)&quot;] in putStr (x !! 0) &gt;&gt; putStr (show x) &gt;&gt; putStr (x !! 1)</code></pre>
+<p>Now this was fun, bu also ad-hoc. The natural question to ask here
+whether there is a principled way of writing, not only quines, but
+programs which have some kind of access to their own source code. The
+answer is yes and this follows from one of the most fundamental results
+in recursion theory, the recursion theorem.</p>
+<h1 id="kleenes-recursion-theorem">Kleene’s Recursion Theorem</h1>
+<p>I want to work with a Turing complete programming language. Luckily,
+what we need is essentially what I described in the first section of <a
+href="https://sonatsuer.github.io/kolmogorov-complexity/2018/05/21/kolmogorov-complexity-1.html">Kolmogorov
+Complexity (1/2)</a>. The differences are that we do not need <span
+class="math inline">\(\mathcal{L}\)</span> to contain UTF-8 characters
+and we do not need an assumption on the way we represent natural
+numbers.</p>
+<p>Let <span class="math inline">\(\mathcal{M}\)</span> be the set of
+all strings from <span class="math inline">\(\mathcal{L}\)</span> and
+let <span class="math inline">\(\mathcal{C}(n)\)</span> be the set of
+all source codes expecting <span class="math inline">\(n\)</span>
+inputs, where <span class="math inline">\(n\)</span> is a natural
+number. Then, for each <span
+class="math inline">\(c\in\mathcal{C}(n)\)</span>, we have a partial
+function <span class="math inline">\(f_c\)</span> from <span
+class="math inline">\(\mathcal{M}^n\)</span> to <span
+class="math inline">\(\mathcal{M}\)</span>, which is simply the partial
+function computed by the source code <span
+class="math inline">\(c\)</span>. These functions are called the
+computable partial functions.</p>
+<p>Let us start with a simple but useful lemma.</p>
+<p><strong>Lemma:</strong> There is a computable function <span
+class="math inline">\(s\)</span> such that for any <span
+class="math inline">\(x\in\mathcal{M}\)</span> and <span
+class="math inline">\(c\in\mathcal{C}(2)\)</span> we have <span
+class="math inline">\(s(c,x)\in\mathcal{C}(1)\)</span> and <span
+class="math display">\[
+   f_c(x,y) = f_{s(c,x)}(y).
+\]</span></p>
+</body>
+</html>
