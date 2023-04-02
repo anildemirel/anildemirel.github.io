@@ -1,17 +1,17 @@
 
 ---
-title: Blog of A. Demirel
+title: Blog of Anıl Demirel
 ...
 
 <p align=center> ![](assets/logo.png) </p>
 
 Hi there!
 
-I am Anıl Demirel. An ex-mathematician and a neophyte coder. You can reach me via email: anildemirel at yahoo dot com_. I am also on [linkedin](https://linkedin.com/anildemirel).
+I am Anıl Demirel. An ex-mathematician and a neophyte coder. You can reach me via email: anildemirel at yahoo dot com_. I am also on [linkedin](https://www.linkedin.com/in/anildemirel/).
 
 This is my blog:
 
-- [Linear combinations of applicatives](linear-combinations-of-applicatives.html)
+- [xtz](xtz.html)
   (September 4, 2022)
 
 - [Two characterizations of natural numbers](two-characterizations-of-natural-numbers.html)
