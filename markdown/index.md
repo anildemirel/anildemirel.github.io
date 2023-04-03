@@ -7,7 +7,7 @@ title: Blog of Anıl Demirel
 
 Hi there!
 
-I am Anıl Demirel. An ex-mathematician and a neophyte coder. You can reach me via email: _anildemirel at yahoo dot com_. I am also on [linkedin](https://www.linkedin.com/in/anildemirel/).
+I am Anıl Demirel. An ex-mathematician and a neophyte coder. You can reach me via email: _anildemirel at yahoo docom_. I am also on [linkedin](https://www.linkedin.com/in/anildemirel/).
 
 This is my blog:
 
