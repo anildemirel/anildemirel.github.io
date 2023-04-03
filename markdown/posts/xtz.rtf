@@ -8,7 +8,7 @@
 \pard\pardeftab720\sa321\partightenfactor0
 
 \f0\b\fs48 \cf0 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Self Aware\
+Self Aware Program\
 A Classical Exercise\
 \pard\pardeftab720\sa240\partightenfactor0
 
@@ -146,22 +146,10 @@ Print A except for its first line\
 \f0\b\fs48 \cf0 Kleene\'92s Recursion Theorem\
 \pard\pardeftab720\sa240\partightenfactor0
 
-\f1\b0\fs24 \cf0 I want to work with a Turing complete programming language. Luckily, what we need is essentially what I described in the first section of {\field{\*\fldinst{HYPERLINK "https://sonatsuer.github.io/kolmogorov-complexity/2018/05/21/kolmogorov-complexity-1.html"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 Kolmogorov Complexity (1/2)}}. The differences are that we do not need \\(\\mathcal\{L\}\\) to contain UTF-8 characters and we do not need an assumption on the way we represent natural numbers.\
+\f1\b0\fs24 \cf0 I want to work with a Turing complete programming language. Luckily, what we need is essentially what I described in the first section of {\field{\*\fldinst{HYPERLINK "https://sonatsuer.github.io/kolmogorov-complexity/2018/05/21/kolmogorov-complexity-1.html"}}{\fldrslt \cf3 \ul \ulc3 Kolmogorov Complexity (1/2)}}. The differences are that we do not need \\(\\mathcal\{L\}\\) to contain UTF-8 characters and we do not need an assumption on the way we represent natural numbers.\
 Let \\(\\mathcal\{M\}\\) be the set of all strings from \\(\\mathcal\{L\}\\) and let \\(\\mathcal\{C\}(n)\\) be the set of all source codes expecting \\(n\\) inputs, where \\(n\\) is a natural number. Then, for each \\(c\\in\\mathcal\{C\}(n)\\), we have a partial function \\(f_c\\) from \\(\\mathcal\{M\}^n\\) to \\(\\mathcal\{M\}\\), which is simply the partial function computed by the source code \\(c\\). These functions are called the computable partial functions.\
 Let us start with a simple but useful lemma.\
 \pard\pardeftab720\sa240\partightenfactor0
 
 \f0\b \cf0 Lemma:
-\f1\b0  There is a computable function \\(s\\) such that for any \\(x\\in\\mathcal\{M\}\\) and \\(c\\in\\mathcal\{C\}(2)\\) we have \\(s(c,x)\\in\\mathcal\{C\}(1)\\) and \\[ f_c(x,y) = f_\{s(c,x)\}(y). \\]\
-<html>\
-  <head>\
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">\
-  </head>\
-  <body>\
-    <div id="footer">\
-      <hr>\
-      2023, 3 Nisan, \uc0\u304 stanbul -maxBound <a href="index.html">An\u305 l Demirel</a>\
-    </div>\
-  </body>\
-</html>\
-}
+\f1\b0  There is a computable function \\(s\\) such that for any \\(x\\in\\mathcal\{M\}\\) and \\(c\\in\\mathcal\{C\}(2)\\) we have \\(s(c,x)\\in\\mathcal\{C\}(1)\\) and \\[ f_c(x,y) = f_\{s(c,x)\}(y). \\]}
