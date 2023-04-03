@@ -148,4 +148,14 @@ Let us also list all the function sets from which we were able to name specific 
 Either we have a strange coincidence in our hands or we just observed a nontrivial relation between functions and
 propositions. In the [next post](curry-howard-2.html), we will see that this is not a coincidence.
 
-2023-maxBound [Anıl Demirel](index.html)
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <div id="footer">
+      <hr>
+      2023-maxBound <a href="index.html">Anıl Demirel</a>
+    </div>
+  </body>
+</html>
