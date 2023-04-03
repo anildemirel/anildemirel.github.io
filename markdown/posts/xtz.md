@@ -139,15 +139,3 @@ $s(c,x)\in\mathcal{C}(1)$ and
 $$
    f_c(x,y) = f_{s(c,x)}(y).
 $$
-
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  </head>
-  <body>
-    <div id="footer">
-      <hr>
-      2023-3 April, İstanbul <a href="index.html">Anıl Demirel</a>
-    </div>
-  </body>
-</html>
