@@ -1,13 +1,14 @@
 
 ---
-title: Blog of Anıl Demirel
-...
-
 <p align=center> ![](assets/logo.png) </p>
 
 Hi there!
 
-I am Anıl Demirel. An ex-mathematician and a neophyte coder. You can reach me via email: _anildemirel at yahoo docom_. I am also on [linkedin](https://www.linkedin.com/in/anildemirel/).
+I am Anıl Demirel. I graduated from the Mathematics Department at [Bilgi University](https://www.bilgi.edu.tr/en/academic/faculty-of-engineering-and-natural-sciences/mathematics/), where I gained a solid foundation in abstract mathematics, including set theory, analysis, and abstract algebra. I am currently pursuing a master's degree at [Galatasaray University](https://gsu.edu.tr/en) and I am a novice coder. I work as a Business Intelligence and Data Analytics Consultant at [PepsiCo](https://www.pepsico.com.tr/en/pepsico-home
+). You can reach me via email: _anildemirel@yahoo.com_. I am also on [linkedin](https://www.linkedin.com/in/anildemirel/).
+
+* M.S., University of Galatasaray, Information Technology
+* B.S. , University of Bilgi, Mathematics
 
 This is my blog:
 
