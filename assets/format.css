@@ -1,43 +1,46 @@
-html, body {
-    height: 100%;
+/* Cihazların ekran genişliği 768px'den küçük olduğunda */
+@media screen and (max-width: 768px) {
+  html, body {
+    height: auto;
+  }
+  html {
+    display: block;
+    margin: 0;
+  }
+  body {
+    display: block;
+    max-width: 100%;
+    font-size: 12pt;
+    padding-bottom: 10px;
+  }
+  #footer {
+    padding-top: 0.5em;
+    font-size: 60%;
+    color: gray;
+    text-align: center;
+  }
 }
 
-html {
+/* Cihazların ekran genişliği 768px veya daha büyük olduğunda */
+@media screen and (min-width: 768px) {
+  html, body {
+    height: 100%;
+  }
+  html {
     display: table;
     margin: auto;
-}
-
-body {
+  }
+  body {
     display: table-cell;
     vertical-align: top;
     max-width: 90vh;
-    font:14pt arial, sans-serif;
+    font-size: 14pt;
     padding-bottom: 20px;
-}
-
-hr {
-    color: rgb(235, 235, 235)
-}
-
-#footer {
+  }
+  #footer {
     padding-top: 1em;
     font-size: 70%;
     color: gray;
     text-align: center;
-    }
-
-
-
-}
-
-/* mobil cihazlar için stiller */
-@media only screen and (max-width: 600px) {
-    html, body {
-        display: block;
-        height: auto;
-    }
-    body {
-        max-width: 90%;
-        margin: auto;
-    }
+  }
 }
