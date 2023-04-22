@@ -1,9 +1,12 @@
+##### Blog of Anıl D.
 
 <p align=center> ![](assets/logo.png) </p>
 
 Hi there!
 
-I am Anıl Demirel. I graduated from the Mathematics Department at [Bilgi University](https://www.bilgi.edu.tr/en/academic/faculty-of-engineering-and-natural-sciences/mathematics/), where I gained a solid foundation in abstract mathematics, including set theory, analysis, and abstract algebra. I am currently pursuing a master's degree at [Galatasaray University](https://gsu.edu.tr/en) and I am a novice coder. I work as a Business Intelligence and Data Analytics Specialist at [PepsiCo](https://www.pepsico.com.tr/en/pepsico-home
+I am Anıl Demirel. I graduated from the Mathematics Department at [Bilgi University](https://www.bilgi.edu.tr/en/academic/faculty-of-engineering-and-natural-sciences/mathematics/), where I gained a solid foundation in abstract mathematics, including set theory, analysis, and abstract algebra. I am currently pursuing a master's degree at [Galatasaray University](https://gsu.edu.tr/en).
+
+Morever, I am a novice coder. I work as a Business Intelligence and Data Analytics Specialist at [PepsiCo](https://www.pepsico.com.tr/en/pepsico-home
 ). You can reach me via email: _anildemirel@yahoo.com_. I am also on [linkedin](https://www.linkedin.com/in/anildemirel/).
 
 * M.S., University of Galatasaray, Information Technology
