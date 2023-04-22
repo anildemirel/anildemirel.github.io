@@ -1,11 +1,16 @@
-/* genel stiller */
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
+}
+
+html {
+    display: table;
+    margin: auto;
 }
 
 body {
+    display: table-cell;
+    vertical-align: top;
+    max-width: 90vh;
     font:14pt arial, sans-serif;
     padding-bottom: 20px;
 }
@@ -19,6 +24,10 @@ hr {
     font-size: 70%;
     color: gray;
     text-align: center;
+    }
+
+
+
 }
 
 /* mobil cihazlar için stiller */
