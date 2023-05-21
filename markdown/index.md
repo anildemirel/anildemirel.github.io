@@ -20,7 +20,7 @@ A place I care deeply [about](https://www.ams.org/notices/201506/rnoti-p652.pdf)
   (May 21, 2023)
 
 
-**Others (One Picture One Story):**
+**Others (Bir Resim Bir Hikaye):**
 
-- [xyz](xyz.html)
-  (May 21, 2023)
+- [Sainte-Victoire Dağı, Cézanne](sv.cezanne.html)
+  (May 22, 2023)
