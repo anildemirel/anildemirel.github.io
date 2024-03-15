@@ -17,10 +17,11 @@ You can reach me via email: _anildemirel@yahoo.com_. I am also on [linkedin](htt
 
 **My Education:**
 
+* M.S. , University of Bilgi, Computer Engineering  
 * M.S., University of Galatasaray, Information Technology
 * B.S. , University of Bilgi, Mathematics
 
-A place I care deeply [about](https://www.ams.org/notices/201506/rnoti-p652.pdf)
+A place I care deeply [about](https://youtu.be/u0KxymbOt44?si=5toAYz-6Zb0aTuRD)
 
 **This is my blog:**
 
